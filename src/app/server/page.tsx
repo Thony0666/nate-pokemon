@@ -1,6 +1,6 @@
 "use client";
 
-import Cards from "../../component/card";
+import ServerCards from "../../component/serverCarde";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 Link;
@@ -87,7 +87,7 @@ const Pages: React.FC = () => {
                   alignItems: "center",
                 }}
               >
-                <Cards name={pokemon.name}/>
+                <ServerCards name={pokemon.name} idPokemon={pokemon.url}/>
               </div>
             ))}
           </ul>

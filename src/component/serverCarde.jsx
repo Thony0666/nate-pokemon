@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-function Cards(props) {
+function ServerCards(props) {
   const name = props.name;
   const idUser = props.idPokemon.split("/").filter(Boolean).pop();
   return (
@@ -25,7 +25,7 @@ function Cards(props) {
         >
           {name}
         </span>
-        <Link href={`/client/${idUser}`}>
+        <Link href={`/server/${idUser}`}>
           <button
             style={{
               backgroundColor: "#f7813e",
@@ -46,4 +46,4 @@ function Cards(props) {
   );
 }
 
-export default Cards;
+export default ServerCards;

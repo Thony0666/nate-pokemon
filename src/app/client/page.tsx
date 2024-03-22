@@ -87,7 +87,7 @@ const Pages: React.FC = () => {
                   alignItems: "center",
                 }}
               >
-                <Cards name={pokemon.name}/>
+                <Cards name={pokemon.name} idPokemon={pokemon.url} />
               </div>
             ))}
           </ul>
